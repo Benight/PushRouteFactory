@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="17C88" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestViewController">
+            <connections>
+                <outlet property="testProperty1Label" destination="a51-SM-Dzi" id="cjp-ln-KgM"/>
+                <outlet property="testProperty2Label" destination="nPd-OE-fgY" id="Wru-a9-PC2"/>
+                <outlet property="testTypeLabel" destination="piX-gE-SXw" id="XDW-ZF-ljs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPd-OE-fgY">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piX-gE-SXw">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a51-SM-Dzi">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="piX-gE-SXw" firstAttribute="top" secondItem="nPd-OE-fgY" secondAttribute="bottom" constant="50" id="MQ2-7X-Idd"/>
+                <constraint firstItem="nPd-OE-fgY" firstAttribute="top" secondItem="a51-SM-Dzi" secondAttribute="bottom" constant="50" id="QXq-5u-Vrh"/>
+                <constraint firstItem="nPd-OE-fgY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TgA-Jy-jPK"/>
+                <constraint firstItem="a51-SM-Dzi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="w3c-m8-go5"/>
+                <constraint firstItem="nPd-OE-fgY" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="xXU-Sj-pKa"/>
+                <constraint firstItem="piX-gE-SXw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zOb-5I-Apj"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="nPd-OE-fgY"/>
+                    <exclude reference="piX-gE-SXw"/>
+                    <exclude reference="a51-SM-Dzi"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="w3c-m8-go5"/>
+                    <exclude reference="QXq-5u-Vrh"/>
+                    <exclude reference="TgA-Jy-jPK"/>
+                    <exclude reference="xXU-Sj-pKa"/>
+                    <exclude reference="MQ2-7X-Idd"/>
+                    <exclude reference="zOb-5I-Apj"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="nPd-OE-fgY"/>
+                    <include reference="piX-gE-SXw"/>
+                    <include reference="a51-SM-Dzi"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="w3c-m8-go5"/>
+                    <include reference="QXq-5u-Vrh"/>
+                    <include reference="TgA-Jy-jPK"/>
+                    <include reference="xXU-Sj-pKa"/>
+                    <include reference="MQ2-7X-Idd"/>
+                    <include reference="zOb-5I-Apj"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
